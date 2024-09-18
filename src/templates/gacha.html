@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ガチャカードアプリ</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+                margin-top: 50px;
+            }
+            button {
+                padding: 15px 30px;
+                font-size: 18px;
+                margin: 20px;
+                border: none;
+                background-color: #4CAF50;
+                color: white;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: #45a049;
+            }
+        </style>
+    </head>
+    <body>
+        {% for card in results %}
+            <img src="/card?img={{ card['card_img'] }}&rarity={{ card['rarity'] }}" width="125">
+        {% endfor %}
+        <form action="/gacha" method="GET">
+            <button type="submit">もう一回引く</button>
+        </form>
+        <form action="/" method="GET">
+            <button type="submit">ホームに戻る</button>
+        </form>
+    </body>
+</html>

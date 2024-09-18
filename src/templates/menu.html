@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ガチャカードアプリ</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+                margin-top: 50px;
+            }
+            button {
+                padding: 15px 30px;
+                font-size: 18px;
+                margin: 20px;
+                border: none;
+                background-color: #4CAF50;
+                color: white;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: #45a049;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 10連ボタン -->
+        <form action="/gacha" method="GET">
+            <button type="submit">10連ガチャ</button>
+        </form>
+
+        <!-- カード生成ボタン -->
+        <form action="/create" method="GET">
+            <button type="submit">カード生成</button>
+        </form>
+
+        <!-- カード一覧ボタン -->
+        <form action="/collection" method="GET">
+            <button type="submit">カード一覧</button>
+        </form>
+    </body>
+</html>

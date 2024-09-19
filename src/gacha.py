@@ -16,7 +16,6 @@ def _gacha_1st_stage():
 # ガチャ
 def gacha() -> dict[str, str, str, str, str]:
     rarity = _gacha_1st_stage()
-    # print(rarity)
     with open('uploads/db.json', 'r') as f:
         db: list = json.load(f)
         random.shuffle(db)
@@ -31,6 +30,6 @@ def gacha10() -> list[dict[str, str, str, str, str]]:
     return result
 
 # result = gacha()
-# img = cv2.imread('uploads/' + result['card_img'])
+# img = cv2.imread('./uploads/' + result['card_img'] + ".jpg")
 # cv2.imshow('result', img)
 # cv2.waitKey(0)

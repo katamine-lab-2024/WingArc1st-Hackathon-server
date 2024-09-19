@@ -9,7 +9,7 @@ DUMMY_ATARI = 5
 # ガチャ機構の第一段階
 def _gacha_1st_stage():
     r = random.randint(1, 20)
-    if r == 7:
+    if False:
         return 'UR'
     return 'R'
 

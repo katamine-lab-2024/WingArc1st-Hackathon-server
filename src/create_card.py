@@ -56,4 +56,4 @@ def create_rarecard(movie_path: str) -> None:
     cv2.imwrite(f'./uploads/{card_name}.jpg', card_img)
     frames_to_video(card_video, f'./uploads/{card_name}.mp4')
 
-# create_rarecard('data/video/5.mp4')
+create_rarecard('data/video/5.mp4')

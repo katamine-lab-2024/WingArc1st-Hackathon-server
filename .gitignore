@@ -1,5 +1,8 @@
 /.venv
 /data
+/uploads/*.mp4
+/uploads/*.jpg
+/uploads/*.json
 __pycache__
 
 test.py
